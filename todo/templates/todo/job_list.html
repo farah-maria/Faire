@@ -7,6 +7,7 @@
     {% for jobs in job %}
     <tr>
         <td>{{jobs.header}}</td>
+        <td><a href="{% url 'jobs-detail' jobs.id %}">View</a></td>
     </tr>
     {% empty %}
     <h3>There's nothing on your to-do list! :)</h3>
