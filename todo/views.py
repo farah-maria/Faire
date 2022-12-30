@@ -7,3 +7,4 @@ from .models import Job
 
 class JobList(ListView):
     model = Job
+    context_object_name = 'job'
