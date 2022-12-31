@@ -20,6 +20,5 @@ class JobDetail(DetailView):
 
 class JobCreate(CreateView):
     model = Job
-    fields = "__all__"
-    
-    
+    fields = '__all__'
+    success_url = reverse_lazy('job')
