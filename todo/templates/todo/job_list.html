@@ -1,16 +1,13 @@
 <h1>Jobs to complete...</h1>
 
 <table>
-    <tr>
-        <th><em>(you can do it!)</em></th>
-    </tr>
     {% for jobs in job %}
     <tr>
         <td>{{jobs.header}}</td>
-        <td><a href="{% url 'jobs-detail' jobs.id %}">View</a></td>
+        <td><a href="{% url 'job-detail' jobs.id %}">View</a></td>
         <td><a href="{% url 'job-create' %}">Add</a></td>
-        <td><a href="{% url 'jobs-update' jobs.id %}">Update</a></td>
-
+        <td><a href="{% url 'job-update' jobs.id %}">Update</a></td>
+        <td><a href="{% url 'job-delete' jobs.id %}">Delete</a></td>
     </tr>
     {% empty %}
     <h3>There's nothing on your to-do list! :)</h3>
