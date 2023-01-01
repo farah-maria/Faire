@@ -9,6 +9,8 @@
         <td>{{jobs.header}}</td>
         <td><a href="{% url 'jobs-detail' jobs.id %}">View</a></td>
         <td><a href="{% url 'job-create' %}">Add</a></td>
+        <td><a href="{% url 'jobs-update' jobs.id %}">Update</a></td>
+
     </tr>
     {% empty %}
     <h3>There's nothing on your to-do list! :)</h3>
