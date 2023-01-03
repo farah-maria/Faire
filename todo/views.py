@@ -4,6 +4,8 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
+from django.views.generic.edit import FormView
+from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.urls import reverse_lazy
@@ -13,6 +15,11 @@ from .models import Job
 class JobList(LoginRequiredMixin, ListView):
     model = Job
     context_object_name = 'job'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['job'] = context['job'].filter(user=self.request.user)
+        context['count'] = context['job'].filter(complete=False).count()
 
 
 class JobDetail(LoginRequiredMixin, DetailView):
