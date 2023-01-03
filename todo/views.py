@@ -19,7 +19,7 @@ class JobList(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['job'] = context['job'].filter(user=self.request.user)
-        context['count'] = context['job'].filter(complete=False).count()
+        context['count'] = context['job'].filter(done=False).count()
 
 
 class JobDetail(LoginRequiredMixin, DetailView):
