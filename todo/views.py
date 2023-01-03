@@ -4,35 +4,36 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.urls import reverse_lazy
 from .models import Job
 
 
-class JobList(ListView):
+class JobList(LoginRequiredMixin, ListView):
     model = Job
     context_object_name = 'job'
 
 
-class JobDetail(DetailView):
+class JobDetail(LoginRequiredMixin, DetailView):
     model = Job
     context_object_name = 'job'
     template_name = 'todo/job_detail.html'
     
 
-class JobCreate(CreateView):
+class JobCreate(LoginRequiredMixin, CreateView):
     model = Job
     fields = '__all__'
     success_url = reverse_lazy('job')
 
 
-class JobUpdate(UpdateView):
+class JobUpdate(LoginRequiredMixin, UpdateView):
     model = Job
     fields = '__all__'
     success_url = reverse_lazy('job')
     
 
-class JobDelete(DeleteView):
+class JobDelete(LoginRequiredMixin, DeleteView):
     model = Job
     context_object_name = 'job'
     success_url = reverse_lazy('job')
