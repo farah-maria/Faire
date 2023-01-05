@@ -1,8 +1,8 @@
 <h1>Job Form</h1>
 
-<form action="" method="post">
+<form action="{% url 'job-create' %}" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Save Job">
+    <input class="button" type="submit" value="Save Task">
 </form>
 <a href="{% url 'job' %}">Go Back</a>

@@ -20,6 +20,7 @@ class JobList(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         context['job'] = context['job'].filter(user=self.request.user)
         context['count'] = context['job'].filter(done=False).count()
+        return context
 
 
 class JobDetail(LoginRequiredMixin, DetailView):
@@ -30,8 +31,12 @@ class JobDetail(LoginRequiredMixin, DetailView):
 
 class JobCreate(LoginRequiredMixin, CreateView):
     model = Job
-    fields = '__all__'
+    fields = ['header', 'info', 'done']
     success_url = reverse_lazy('job')
+    
+    def form_invalid(self, form):
+        form.instance.user = self.request.user
+        return super(JobCreate, self).form_valid(form)
 
 
 class JobUpdate(LoginRequiredMixin, UpdateView):

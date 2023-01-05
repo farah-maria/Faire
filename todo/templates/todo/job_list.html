@@ -1,7 +1,7 @@
 {% if request.user.is_authenticated %}
 
     <p>Logged in as "{{ request.user }}"</p>
-    <a href="">Log out</a>
+    <a href="{% url 'logout' %}">Log out</a>
 
 {% else %}
 
@@ -11,18 +11,18 @@
 
 
 <h1>Jobs to complete...</h1>
-   
+
 <table>
     {% for jobs in job %}
     <tr>
-        <td>{{jobs.header}}</td>
-        <td><a href="{% url 'job-detail' jobs.id %}">View</a></td>
+        <td>{{job.header}}</td>
+        <td><a href="{% url 'job-detail' tasks.id %}">View</a></td>
         <td><a href="{% url 'job-create' %}">Add</a></td>
-        <td><a href="{% url 'job-update' jobs.id %}">Update</a></td>
-        <td><a href="{% url 'job-delete' jobs.id %}">Delete</a></td>
+        <td><a href="{% url 'job-update' tasks.id %}">Update</a></td>
+        <td><a href="{% url 'job-delete' tasks.id %}">Delete</a></td>
     </tr>
     {% empty %}
-    <h3>There's nothing on your to-do list! :)</h3>
-    <a href="">Add a new task...</a>
-    {% endfor %} 
+    <h3>No items in list</h3>
+    <a href="{% url 'job-create' %}">Add New Item</a>
+    {% endfor %}
 </table>
