@@ -15,11 +15,11 @@
 <table>
     {% for jobs in job %}
     <tr>
-        <td>{{job.header}}</td>
-        <td><a href="{% url 'job-detail' tasks.id %}">View</a></td>
+        <td>{{jobs.header}}</td>
+        <td><a href="{% url 'job-detail' jobs.id %}">View</a></td>
         <td><a href="{% url 'job-create' %}">Add</a></td>
-        <td><a href="{% url 'job-update' tasks.id %}">Update</a></td>
-        <td><a href="{% url 'job-delete' tasks.id %}">Delete</a></td>
+        <td><a href="{% url 'job-update' jobs.id %}">Update</a></td>
+        <td><a href="{% url 'job-delete' jobs.id %}">Delete</a></td>
     </tr>
     {% empty %}
     <h3>No items in list</h3>

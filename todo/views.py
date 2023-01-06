@@ -34,7 +34,7 @@ class JobCreate(LoginRequiredMixin, CreateView):
     fields = ['header', 'info', 'done']
     success_url = reverse_lazy('job')
     
-    def form_invalid(self, form):
+    def form_valid(self, form):
         form.instance.user = self.request.user
         return super(JobCreate, self).form_valid(form)
 
