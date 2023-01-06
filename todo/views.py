@@ -6,8 +6,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.views.generic.edit import FormView
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login
 from django.contrib.auth.mixins import LoginRequiredMixin
-
 from django.urls import reverse_lazy
 from .models import Job
 
@@ -58,3 +58,16 @@ class Login(LoginView):
     
     def get_success_url(self):
         return reverse_lazy('job')
+
+
+class SignUp(FormView):
+    template_name = 'todo/signup.html'
+    form_class = UserCreationForm
+    redirect_authenticated_user = True
+    success_url = reverse_lazy('job')
+    
+    def form_valid(self, form):
+        user = form.save()
+        if user is not None:
+            login(self.request, user)
+        return super(SignUp, self).form_valid(form)    
