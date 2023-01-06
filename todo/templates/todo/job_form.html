@@ -3,6 +3,6 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <input class="button" type="submit" value="Save Job">
+    <input class="button" type="submit" value="Save">
 </form>
 <a href="{% url 'job' %}">Go Back</a>
