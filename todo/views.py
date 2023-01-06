@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
@@ -70,4 +70,9 @@ class SignUp(FormView):
         user = form.save()
         if user is not None:
             login(self.request, user)
-        return super(SignUp, self).form_valid(form)    
+        return super(SignUp, self).form_valid(form)
+    
+    def get(self, *args, **kwargs):
+        if self.request.user.is_authenticated:
+            return_redirect('job')
+        return super(SignUp, self).get(*args, **kwargs)
