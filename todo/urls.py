@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import JobList, JobDetail, JobCreate, JobUpdate, JobDelete, Login, SignUp
+from .views import JobList, JobDetail, JobCreate, JobUpdate, JobDelete, Login
+from .views import SignUp
 from django.contrib.auth.views import LogoutView
 
 

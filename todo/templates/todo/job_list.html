@@ -1,3 +1,5 @@
+{% extends 'todo/base.html' %}
+
 {% if request.user.is_authenticated %}
 
     <p>Logged in as "{{ request.user }}"</p>
