@@ -2,7 +2,8 @@
 
 
 body {
-    background-image: url('../images/background.jpg') contain no-repeat;
+    background-image: url('../images/background.jpg');
+    background-size: 100%;
     background-color: antiquewhite;
 }
 
