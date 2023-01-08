@@ -11,7 +11,19 @@
      <script src="https://kit.fontawesome.com/52443e90c9.js" crossorigin="anonymous"></script>
     <title>Faire</title>
 </head>
-<header><h2><i class="fa-regular fa-clipboard"></i>  faire</h2></header>
+<header>
+    <h2><i class="fa-regular fa-clipboard"></i>  faire</h2>
+    {% if request.user.is_authenticated %}
+
+    <p class="loginstatus">Logged in as "{{ request.user }}"</p>
+    <a href="{% url 'logout' %}" class="loginstatus">Log out</a>
+
+{% else %}
+
+    <a href="{% url 'login' %}" class="loginstatus">Log in</a>
+{% endif %}
+<hr>
+</header>
 <body>
     <div class="container">
         {% block content %}

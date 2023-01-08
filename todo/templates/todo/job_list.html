@@ -2,17 +2,7 @@
 
 {% block content %}
 
-{% if request.user.is_authenticated %}
-
-    <p>Logged in as "{{ request.user }}"</p>
-    <a href="{% url 'logout' %}">Log out</a>
-
-{% else %}
-
-    <a href="{% url 'login' %}">Log in</a>
-{% endif %}
-<hr>
-
+<div class="container">
 <h1>Jobs to complete... </h1>
 
 <form action="" method="get">
@@ -34,4 +24,5 @@
     <a href="{% url 'job-create' %}">Add New Item</a>
     {% endfor %}
 </table>
+</div>
 {% endblock content %}

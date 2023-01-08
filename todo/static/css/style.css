@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     font-family: 'Parisienne', cursive;
-    font-size: 120%;
+    font-size: 200%;
     color: navy ;
     text-decoration: overline 2px wavy white;
 }
@@ -40,3 +40,14 @@ hr {
     height: 1px;    
 }
 
+.container {
+    max-width: 550px;
+    margin: auto;
+    background-color: rgba(247, 247, 227, 0.1);
+}
+
+.loginstatus {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 90%;
+    color: #6b6e70;
+}
