@@ -52,3 +52,9 @@ hr {
     font-size: 90%;
     color: #6b6e70;
 }
+
+#finished {
+    color: red;
+    font-family: 'Delius', cursive;
+    font-weight: bolder;
+}
