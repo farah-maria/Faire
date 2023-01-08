@@ -16,12 +16,13 @@ h2 {
     font-family: 'Parisienne', cursive;
     font-size: 120%;
     color: navy ;
+    text-decoration: overline 2px wavy white;
 }
 
 i {
     font-weight: lighter;
     font-size: 70%;
-    color: white;
+    color: red;
 }
 
 body {
