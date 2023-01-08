@@ -43,6 +43,7 @@ hr {
 .container {
     max-width: 550px;
     margin: auto;
+    margin-top: -5%;
     background-color: rgba(247, 247, 227, 0.1);
 }
 
