@@ -11,22 +11,6 @@
     <input type="submit" value="Search Job">
 </form>
 
-<div>
-    {% for jobs in job %}
-    <div>
-        {% if jobs.done %}
-            <div>
-                <i><s><a href="{% url 'job-update' jobs.id %}">{{ jobs }}</a></s></i>
-            </div>
-            <a href="{% url 'job-delete' jobs.id %}" id="finished">X</a>
-        {% else %}
-        <div>
-            <i><s><a href="{% url 'job-update' jobs.id %}">{{ jobs }}</a></s></i>
-        </div>
-        <a href="{% url 'job-delete' jobs.id %}" id="finished"></a>
-    </div>
-</div>
-
 <table>
     {% for jobs in job %}
     <tr>
