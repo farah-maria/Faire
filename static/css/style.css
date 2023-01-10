@@ -50,7 +50,7 @@ i {
 }
 
 body {
-    background-image: url('../images/background.jpg');
+    background-image: url('https://res.cloudinary.com/farahtasia/image/upload/v1673374071/static/images/background.928606ecdfca.jpg');
     background-size: 100%;
     background-color: antiquewhite;
     font-family: 'Sue Ellen Francisco', cursive;
