@@ -32,6 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['faire.herokuapp.com', 'localhost']
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
