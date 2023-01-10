@@ -22,7 +22,31 @@ h2 {
 i {
     font-weight: lighter;
     font-size: 70%;
+}
+
+.listicon {
+    color: navy;
+}
+
+.listicon :hover {
     color: red;
+}
+
+#logo {
+    color: red;
+}
+
+#addjobhere {
+    border: solid white;
+    border-radius: 10%;
+    width: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#addjobhere :hover {
+    color: aqua;
+    cursor: pointer;
 }
 
 body {

@@ -6,19 +6,16 @@
     <h5>You have {{ count }} incomplete task{{ count|pluralize:'s' }}.</h5>
 <h1>Jobs to complete... </h1>
 
-<form action="" method="get">
-    <input type="text" name="search-area">
-    <input type="submit" value="Search Job">
-</form>
+<p id="addjobhere"><a href="{% url 'job-create' %}" class="listicon"><i class="fa-solid fa-plus"></i></a></p>
+
 
 <table>
     {% for jobs in job %}
     <tr>
         <td>{{jobs.header}}</td>
-        <td><a href="{% url 'job-detail' jobs.id %}">View</a></td>
-        <td><a href="{% url 'job-create' %}">Add</a></td>
-        <td><a href="{% url 'job-update' jobs.id %}">Update</a></td>
-        <td><a href="{% url 'job-delete' jobs.id %}">Delete</a></td>
+        <td class="listicon"><a href="{% url 'job-detail' jobs.id %}"><i class="fa-solid fa-magnifying-glass"></i></a>  </td>
+        <td class="listicon"><a href="{% url 'job-update' jobs.id %}"><i class="fa-solid fa-pencil"></i></a>  </td>
+        <td class="listicon"><a href="{% url 'job-delete' jobs.id %}"><i class="fa-solid fa-trash"></i></a>  </td>
     </tr>
     {% empty %}
     <h3>No items in list</h3>
@@ -26,4 +23,5 @@
     {% endfor %}
 </table>
 </div>
+
 {% endblock content %}
