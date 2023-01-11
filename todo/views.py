@@ -36,7 +36,8 @@ class JobDetail(LoginRequiredMixin, DetailView):
     
 
 class JobCreate(LoginRequiredMixin, CreateView):
-    model = Job
+   
+    model = Job 
     fields = ['header', 'info', 'done']
     success_url = reverse_lazy('job')
     
