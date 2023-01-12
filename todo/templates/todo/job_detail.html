@@ -3,11 +3,14 @@
 {% block content %}
 
 <h1>Job: {{ job }}</h1>
-<p>Info: {{job.info}}</p>
+<br>
+<p>Details: {{job.info}}</p>
 {% if job.done %}
-    <p>This job is bleedin done</p>
+    <p>This job has been completed. Well done!</p>
   {% endif %}
-<p>Date: {{job.date}}</p>
+<br>
+<p>Date created: {{job.date}}</p>
+<br>
 <a href="{% url 'job' %}">Go Back</a>
 
 {% endblock content %}

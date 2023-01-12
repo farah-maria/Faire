@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <!-- link to styles.css-->
      {% load static %}
-     <!--<link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
      <!--font awesome-->
      <script src="https://kit.fontawesome.com/52443e90c9.js" crossorigin="anonymous"></script>
     <title>Faire</title>
@@ -18,15 +18,18 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid"> 
-          <a class="navbar-brand" href="{% url 'job' %}"><i class="fa-regular fa-clipboard" id="logo"></i>  faire</a>
-          <span class="navbar-text" id="navbarSupportedContent">
+          <a class="navbar-brand" href="{% url 'job' %}" id="faire"><i class="fa-regular fa-clipboard" id="logo"></i>  faire</a>
+          <span class="navbar-text" class="faire" id="navbarSupportedContent">
                 {% if request.user.is_authenticated %}
-                    <p class="loginstatus">Hello, {{ request.user }}!
-                    <a href="{% url 'logout' %}" class="loginstatus">Log out</a>
+                    <p id="logingreeting">Hello, {{ request.user }}!
+                    <a href="{% url 'logout' %}" id="logout">Logout</a>
                 {% else %}
-                    <a href="{% url 'login' %}" class="loginstatus">Log in</a>
+                    <a href="{% url 'login' %}" id="login">Login</a>
                     </p>
                 {% endif %}
+                <br>
+                <br>
+                <br>
             </span>
         </div>
       </nav>

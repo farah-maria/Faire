@@ -3,7 +3,8 @@
 {% block content %}
 
 <div class="container">
-    <h5>You have {{ count }} incomplete task{{ count|pluralize:'s' }}.</h5>
+    <br>
+    <div id="count">You have {{ count }} incomplete task{{ count|pluralize:'s' }}.</div>
 <h1>Jobs to complete... </h1>
 <br>
 <p id="addjobhere"><a href="{% url 'job-create' %}" class="listicon">Add task  <i class="fa-solid fa-plus"></i></a></p>
