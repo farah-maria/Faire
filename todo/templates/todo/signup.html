@@ -8,7 +8,7 @@
     {% csrf_token %}
     {{ form|crispy }}
     <input type="submit" value="Confirm">
-
+    <br>
     <p>Already registered? <a href="{% url 'login' %}">Log in here</a></p> 
 </form>
 
