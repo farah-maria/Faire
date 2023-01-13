@@ -5,23 +5,23 @@
 
 h1 {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 180%;
+    font-size: 300%;
     color: black;
     text-decoration: underline 2px red;
-    margin-bottom: 0%; 
+    margin-bottom: 1%; 
 }
 
 #faire {
     margin-top: 2%;
     font-family: 'Parisienne', cursive;
-    font-size: 200%;
+    font-size: 300%;
     color: navy ;
     text-decoration: overline 2px wavy white;
 }
 
 i {
     font-weight: lighter;
-    font-size: 70%;
+    font-size: 100%;
 }
 
 .listicon {
@@ -37,12 +37,13 @@ i {
 }
 
 #addjobhere {
-    border: solid white;
-    border-radius: 10%;
+    border: solid white 0.1em;
+    border-radius: 50%;
     width: fit-content;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     color: slategray;
+    font-size: 120%;
 }
 
 #addjobhere :hover {
@@ -52,7 +53,7 @@ i {
 
 #count {
     font-family: 'Parisienne', cursive;
-    font-size: large;
+    font-size: 150%;
     color: black;
 }
 
@@ -82,7 +83,7 @@ hr {
 
 #logingreeting {
     font-family: 'Patrick Hand SC', cursive;
-    font-size: 90%;
+    font-size: 120%;
     color: #6b6e70;
     margin-left: 1%;
     margin-top: 1%;
@@ -90,14 +91,6 @@ hr {
 
 .loginout {
     font-family: 'Patrick Hand SC', cursive;
-    font-size: 90%;
+    font-size: 100%;
     color: steelblue;
-}
-
-#complete {
-    color: black;
-}
-
-#incomplete {
-    color: black;
 }
