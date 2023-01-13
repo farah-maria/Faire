@@ -8,7 +8,6 @@ class Job(models.Model):
     header = models.CharField(max_length=210, null=True)
     info = models.TextField(null=True, blank=True)
     done = models.BooleanField(default=False)
-    date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.header
