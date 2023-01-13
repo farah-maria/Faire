@@ -2,15 +2,15 @@
 
 {% block content %}
 
-<h1>Job: {{ job }}</h1>
+<h1>Job: {{ jobs }}</h1>
 <br>
-<p>Details: {{job.info}}</p>
-{% if job.done %}
+<p><span class="formheader">Details:</span> {{jobs.info}}</p>
+{% if jobs.done %}
     <br>
     <p>This job has been completed. Well done!</p>
 {% endif %}
 <br>
 <br>
-<a href="{% url 'job' %}">Go Back</a>
+<a href="{% url 'jobs' %}">Go Back</a>
 
 {% endblock content %}

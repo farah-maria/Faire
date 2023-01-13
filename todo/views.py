@@ -14,18 +14,18 @@ from .models import Job
 
 class JobList(LoginRequiredMixin, ListView):
     model = Job
-    context_object_name = 'job'
+    context_object_name = 'jobs'
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['job'] = context['job'].filter(user=self.request.user)
-        context['count'] = context['job'].filter(done=False).count()
+        context['jobs'] = context['jobs'].filter(user=self.request.user)
+        context['count'] = context['jobs'].filter(done=False).count()
         return context
 
 
 class JobDetail(LoginRequiredMixin, DetailView):
     model = Job
-    context_object_name = 'job'
+    context_object_name = 'jobs'
     template_name = 'todo/job_detail.html'
     
 
@@ -33,7 +33,7 @@ class JobCreate(LoginRequiredMixin, CreateView):
    
     model = Job 
     fields = ['header', 'info', 'done']
-    success_url = reverse_lazy('job')
+    success_url = reverse_lazy('jobs')
     
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -43,13 +43,13 @@ class JobCreate(LoginRequiredMixin, CreateView):
 class JobUpdate(LoginRequiredMixin, UpdateView):
     model = Job
     fields = ['header', 'info', 'done']
-    success_url = reverse_lazy('job')
+    success_url = reverse_lazy('jobs')
     
 
 class JobDelete(LoginRequiredMixin, DeleteView):
     model = Job
-    context_object_name = 'job'
-    success_url = reverse_lazy('job')
+    context_object_name = 'jobs'
+    success_url = reverse_lazy('jobs')
     
 
 class Login(LoginView):
@@ -58,14 +58,14 @@ class Login(LoginView):
     redirect_authenticated_user = False
     
     def get_success_url(self):
-        return reverse_lazy('job')
+        return reverse_lazy('jobs')
 
 
 class SignUp(FormView):
     template_name = 'todo/signup.html'
     form_class = UserCreationForm
     redirect_authenticated_user = True
-    success_url = reverse_lazy('job')
+    success_url = reverse_lazy('jobs')
     
     def form_valid(self, form):
         user = form.save()
@@ -75,5 +75,5 @@ class SignUp(FormView):
     
     def get(self, *args, **kwargs):
         if self.request.user.is_authenticated:
-            return_redirect('job')
+            return_redirect('jobs')
         return super(SignUp, self).get(*args, **kwargs)

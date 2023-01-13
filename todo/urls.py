@@ -5,7 +5,7 @@ from django.contrib.auth.views import LogoutView
 
 
 urlpatterns = [
-    path('', JobList.as_view(), name="job"),
+    path('', JobList.as_view(), name="jobs"),
     path('job-create/', JobCreate.as_view(), name="job-create"),
     path('login/', Login.as_view(), name="login"),
     path('logout/', LogoutView.as_view(next_page='login'), name="logout"),
