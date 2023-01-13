@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap'); /* 'Patrick Hand SC', cursive */
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap'); /* 'Parisienne', cursive */
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap'); /* font-family: 'Delius', cursive */
-@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* 'Patrick Hand', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap'); /* 'Cabin Sketch', cursive */
 
 h1 {
@@ -14,13 +13,6 @@ h1 {
 
 #faire {
     margin-top: 2%;
-    font-family: 'Parisienne', cursive;
-    font-size: 200%;
-    color: navy ;
-    text-decoration: overline 2px wavy white;
-}
-
-h2 {
     font-family: 'Parisienne', cursive;
     font-size: 200%;
     color: navy ;
@@ -68,9 +60,9 @@ body {
     background-image: url('https://res.cloudinary.com/farahtasia/image/upload/v1673374071/static/images/background.928606ecdfca.jpg');
     background-size: 100%;
     background-color: antiquewhite;
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family: 'Patrick Hand', cursive;
     font-size: 180%;
-    font-weight: 900;
+    font-weight: 700;
     color: #161616;
     line-height: 1.5em;
 }
@@ -96,14 +88,16 @@ hr {
     margin-top: 1%;
 }
 
-#login {
+.loginout {
     font-family: 'Patrick Hand SC', cursive;
     font-size: 90%;
     color: steelblue;
 }
 
-#logout {
-    font-family: 'Patrick Hand SC', cursive;
-    font-size: 90%;
-    color: steelblue;
+#complete {
+    color: black;
+}
+
+#incomplete {
+    color: black;
 }

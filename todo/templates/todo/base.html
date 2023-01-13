@@ -22,9 +22,9 @@
           <span class="navbar-text" class="faire" id="navbarSupportedContent">
                 {% if request.user.is_authenticated %}
                     <p id="logingreeting">Hello, {{ request.user }}!
-                    <a href="{% url 'logout' %}" id="logout">Logout</a>
+                    <a href="{% url 'logout' %}" class="loginout">Logout</a>
                 {% else %}
-                    <a href="{% url 'login' %}" id="login">Login</a>
+                    <a href="{% url 'login' %}" class="loginout">Login</a>
                     </p>
                 {% endif %}
                 <br>
@@ -41,4 +41,4 @@
         {% endblock content %}
     </div>
 </body>
-</html>
+</html> 
