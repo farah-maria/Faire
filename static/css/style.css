@@ -94,3 +94,21 @@ hr {
     font-size: 100%;
     color: steelblue;
 }
+
+@media only screen and (max-width: 579px) {
+    h1 {
+        margin-left: 5%;
+    }
+
+    #count {
+        margin-left: 3%;
+    }
+
+    .navbar-brand {
+        margin-left: -7%;
+    }
+
+    #addjobhere {
+        margin-left: 3%;     
+    }
+  }
