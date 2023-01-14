@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
@@ -47,11 +46,14 @@ INSTALLED_APPS = [
     'cloudinary',
     'todo',
     'crispy_forms',
-    "crispy_bootstrap3"
+    'crispy_bootstrap3',
 ]
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap3"
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
+CRISPY_ALLOWED_TEMPLATE_PACKS = (
+    "bootstrap", "uni_form", "bootstrap3", "bootstrap4", "gds"
+)
+
+CRISPY_TEMPLATE_PACK = "gds"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
