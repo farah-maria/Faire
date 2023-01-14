@@ -27,7 +27,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['faire.herokuapp.com', 'localhost']
 
@@ -49,11 +49,9 @@ INSTALLED_APPS = [
     'crispy_bootstrap3',
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = (
-    "bootstrap", "uni_form", "bootstrap3", "bootstrap4", "gds"
-)
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-CRISPY_TEMPLATE_PACK = "gds"
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -84,7 +82,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'faire.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -148,6 +145,3 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'login'
-
-
-
