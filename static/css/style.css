@@ -8,15 +8,20 @@ h1 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 300%;
     color: black;
-    text-decoration: underline 2px red;
+    text-decoration: underline 2px  #bb0000;
     margin-bottom: 1%; 
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: bold;
 }
 
 #faire {
     margin-top: 2%;
     font-family: 'Parisienne', cursive;
     font-size: 300%;
-    color: navy ;
+    color: #23395d;
     text-decoration: overline 2px wavy white;
 }
 
@@ -26,15 +31,16 @@ i {
 }
 
 .listicon {
-    color: navy;
+    color: #23395d;
 }
 
 .listicon :hover {
-    color: red;
+    color: #bb0000;
 }
 
 #logo {
-    color: red;
+    color: #bb0000;
+    font-size: 80%;
 }
 
 #addjobhere {
@@ -53,7 +59,7 @@ i {
 }
 
 #count {
-    font-family: 'Parisienne', cursive;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 150%;
     color: black;
 }
