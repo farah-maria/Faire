@@ -15,7 +15,7 @@ I designed the app for submission as my 'Portfolio Project 4', part of the [**Co
 
 I have used PostgreSQL as my database management system, via ElephantSQL to install and manage the SQL database. I used Heroku to deploy the project, and GitHub for version control. 
 
-The principles of UX (user experience) are based on business logic, and in this sense my app is based on business oriented logic despite it not being a paid for service.
+The principles of UX (user experience) are based on business logic, and in this sense my app is based on business oriented logic despite it not being a paid for service. The Code Institute brief for this project does not outline a requirement for the integration of a payment system.
 
 A full overview of the design and development of my app, including testing and code validation, is included below.
 
