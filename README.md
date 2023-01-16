@@ -8,9 +8,11 @@ The deployed site can be visited by clicking [**here**](https://faire.herokuapp.
 
 The site code can be viewed in this [**GitHub Repository**](https://https://github.com/farah-maria/Faire).
 
-I designed the app for submission as my 'Portfolio Project 4', part of the [**Code Institute Fullstack Software Development Diploma**](https://codeinstitute.net/ie/full-stack-software-development-diploma/).
+I designed the app for submission as my 'Portfolio Project 4', part of the [**Code Institute Fullstack Software Development Diploma**](https://codeinstitute.net/ie/full-stack-software-development-diploma/). The aim of this project is to build a full-stack site based on business-oriented logic, used to control a centrally-owned dataset. A requirement is to set up an authentication mechanism and provide role-based access to the site's data.
 
-A full overview of the design and development of the Faire app, including testing and code validation, is included below.
+The principles of UX (user experience) are based on business logic, and in this sense my app is based on business oriented logic despite it not being a paid for service.
+
+A full overview of the design and development of my app, including testing and code validation, is included below.
 
 ## **Table of Contents**
 
