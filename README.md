@@ -12,10 +12,35 @@ I designed the app for submission as my 'Portfolio Project 4', part of the [**Co
 
 A full overview of the design and development of the Faire app, including testing and code validation, is included below.
 
+## **Table of Contents**
 
+1. [User Experience](#user-experience)
+    - [User Stories](#user-stories)
+    - [Design and Scope](#design-and-scope)
+        * [Agile approach](#agile)
+        * [Wireframes](#wireframes)
+        * [Database Schema](#database-schema)
+        * [UI design choices & changes](#ui-design-choices)
 
+2. [Features](#features)
+    - [Existing Features](#existing-features)
+        * [Base HTML](#base-html)
+    - [Future Features](#future-features)
 
+3. [Technologies Used](#technologies-used)
 
+4. [Testing](#testing)
+    - [Testing Devices](#testing-devices)
+    - [Media Queries](#media-queries)
+    - [Validation](#validation)
+        * [HTML](#html)
+        * [CSS](#css)
+        * [JavaScript](#javascript)
+        * [Python](#python)
+    - [Bugs](#bugs)
 
-
-
+5. [Deployment](#deployment)
+6. [Agile Reflections on Product Development](#agile-reflections)
+7. [Acknowledgements & Credits](#acknowledgements-and-credits)
+    - [Images](#images)
+    - [Code](#code)
