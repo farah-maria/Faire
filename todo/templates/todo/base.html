@@ -27,13 +27,13 @@
               <a class="navbar-brand" href="{% url 'jobs' %}" id="faire"><i class="fa-regular fa-clipboard" id="logo"></i>  faire</a>
               <span class="navbar-text"  id="navbarSupportedContent">
                     {% if request.user.is_authenticated %}
-                        <p id="logingreeting">Hello, {{ request.user }}!
+                        <span id="logingreeting">Hello, {{ request.user }}!
                         <a href="{% url 'logout' %}" class="loginout">Logout</a>
-                        </p>
-                    {% else %}
-                        <p>
+                        </span>
+                    {% else %}  
+                        <span>
                         <a href="{% url 'login' %}" class="loginout">Login</a>
-                        </p>
+                        </span>
                     {% endif %}
                     <br>
                     <br>
