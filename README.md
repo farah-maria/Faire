@@ -10,6 +10,8 @@ The site code can be viewed in this [**GitHub Repository**](https://https://gith
 
 I designed the app for submission as my 'Portfolio Project 4', part of the [**Code Institute Fullstack Software Development Diploma**](https://codeinstitute.net/ie/full-stack-software-development-diploma/).
 
+A full overview of the design and development of the Faire app, including testing and code validation, is included below.
+
 
 
 
