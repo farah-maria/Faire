@@ -8,7 +8,12 @@ The deployed site can be visited by clicking [**here**](https://faire.herokuapp.
 
 The site code can be viewed in this [**GitHub Repository**](https://https://github.com/farah-maria/Faire).
 
-I designed the app for submission as my 'Portfolio Project 4', part of the [**Code Institute Fullstack Software Development Diploma**](https://codeinstitute.net/ie/full-stack-software-development-diploma/). The aim of this project is to build a full-stack site based on business-oriented logic, used to control a centrally-owned dataset. A requirement is to set up an authentication mechanism and provide role-based access to the site's data.
+I designed the app for submission as my 'Portfolio Project 4', part of the [**Code Institute Fullstack Software Development Diploma**](https://codeinstitute.net/ie/full-stack-software-development-diploma/). The aim of this project is to build a full-stack site based on business-oriented logic, used to control a centrally-owned dataset. A requirement is to set up an authentication mechanism and provide role-based access to the site's data, and for the site to be fully deployed for public use. The required technologies for the project are:
+
+- HTML, CSS, JavaScript, Python+Django
+- A relational database (recommending MySQL or PostgreSQL)
+
+I have used PostgreSQL as my database management system, via ElephantSQL to install and manage the SQL database. I used Heroku to deploy the project, and GitHub for version control. 
 
 The principles of UX (user experience) are based on business logic, and in this sense my app is based on business oriented logic despite it not being a paid for service.
 
