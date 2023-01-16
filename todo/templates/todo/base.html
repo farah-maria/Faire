@@ -29,7 +29,9 @@
                     {% if request.user.is_authenticated %}
                         <p id="logingreeting">Hello, {{ request.user }}!
                         <a href="{% url 'logout' %}" class="loginout">Logout</a>
+                        </p>
                     {% else %}
+                        <p>
                         <a href="{% url 'login' %}" class="loginout">Login</a>
                         </p>
                     {% endif %}
