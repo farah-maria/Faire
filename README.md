@@ -24,7 +24,7 @@ A full overview of the design and development of my app, including testing and c
 1. [User Experience](#user-experience)
     - [User Stories](#user-stories)
     - [Design and Scope](#design-and-scope)
-        * [Agile approach](#agile)
+        * [Agile Approach](#agile-approach)
         * [Wireframes](#wireframes)
         * [Database Schema](#database-schema)
         * [UI design choices & changes](#ui-design-choices)
@@ -94,9 +94,15 @@ The following user stories were created for the general user. Usage of the site 
 
 <br>
 
-### **An Agile Approach to User Stories…**
+### **Design and Scope**
+The scope of the project was to have a MVP with a few extras if time permitted, and I used the user stories as a guide for this.
 
-Each of the above user stories were written as ‘issues’ in Github and mapped to a Kanban Board (‘Faire Kanban Board’ attached as a Github project in my repository). Those user stories labelled  ‘must have’ for the MVP were mostly attached to the Github milestone that I named  ‘Iteration 1’, so that by the end of the first Agile sprint, a roughly workable app had been produced. The rest of the ‘must have’s were mapped to Iteration 2, so that an app with full CRUD functionality could be completed as soon as possible. The ‘should have’s were mapped to Iteration 2 or 3, so that they were completed after the must have functionalities were in place. Some of the ‘won’t have’ or ‘should have’ user story tasks were mapped to Iteration 3, in case I had time to complete all of the tasks for the full list of 12 user stories outlined above.  
+#### Agile Approach
+
+Each of the twelve user stories were written as ‘issues’ in Github and mapped to a Kanban Board (‘Faire Kanban Board’ attached as a Github project in my repository). Those user stories labelled  ‘must have’ for the MVP were mostly attached to the Github milestone that I named  ‘Iteration 1’, so that by the end of the first Agile sprint, a roughly workable app had been produced. The rest of the ‘must have’s were mapped to Iteration 2, so that an app with full CRUD functionality could be completed as soon as possible. The ‘should have’s were mapped to Iteration 2 or 3, so that they were completed after the must have functionalities were in place. Some of the ‘won’t have’ or ‘should have’ user story tasks were mapped to Iteration 3, in case I had time to complete all of the tasks for the full list of 12 user stories outlined above.  
 <br>
 <center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003570/userstoriesAgile_juoaoq.png" alt="Screenshot of user-stories/ issues in Github" width="60%"/></center>
 <br>
+
+The time-boxing aspect of Agile was approached by setting the due-date for each iteration in advance, taking into account how long I thought the steps took me when I was completing tutorials that taught the same skills (I took a bit of time off this, as I knew it would take me less time to code something that I'd already learnt to do).
+
