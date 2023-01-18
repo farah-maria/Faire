@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -10,6 +11,11 @@ from django.contrib.auth import login
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from .models import Job
+
+
+@xframe_options_exempt
+def ok_to_load_in_a_frame(request):
+    return HttpResponse("This page is safe to load in a frame on any site.")
 
 
 class JobList(LoginRequiredMixin, ListView):
