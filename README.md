@@ -106,3 +106,56 @@ Each of the twelve user stories were written as ‘issues’ in Github and mappe
 
 The time-boxing aspect of Agile was approached by setting the due-date for each iteration in advance, taking into account how long I thought the steps took me when I was completing tutorials that taught the same skills (I took a bit of time off this, as I knew it would take me less time to code something that I'd already learnt to do).
 
+#### Wireframes
+
+The basic **wireframes** are available as eight PNG files; one which shows the initial log-in page, which is the first page that loads on the site. 
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003473/wire6_ndz5lw.png" alt="Wireframe for log in page, desktop version." width="60%"/></center>
+<br>
+
+If the user doesn’t have an account, there’s an option to sign-up, which leads to a sign-up page where the username and password are set. The fields will be set by Django’s automated system, but using crispy forms, if possible, to make the form look nicer.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674076847/signup_lbpkae.png" alt="Wireframe for log in page, mobile version." width="40%"/></center>
+<br>
+
+I envisaged all the mobile versions of each page as identical to the ones for desktop, but with the body text centred directly beneath the logo. The tablet layouts were planned as identical to the desktop ones.
+The main page consists of the actual list of jobs to-do:
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673890339/wire_psv5nw.png" alt="Wireframe for jobs list, mobile version." width="40%"/></center>
+<br>
+
+Here, there are the options to add jobs, delete them, read the details already saved for each job, and to edit them, by pressing on the appropriate icon.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673890356/wire1_mcu5g7.png" alt="Wireframe for jobs list, desktop/ tablet version." width="60%"/></center>
+<br>
+
+By pressing on the ‘add a task here’ plus-sign icon, a job can be added by entering details into a form.
+
+<br>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003353/wire3_keouey.png" alt="Wireframe for jobs form, mobile version." width="40%"/></center>
+<br>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003500/wire7_ei5moa.png" alt="Wireframe for jobs form, desktop/ tablet version." width="60%"/></center>
+<br>
+
+By pressing the icon for reading the info for a job (from the jobs list page), a page comes up that shows the details entered regarding the job without the option of amending anything (it’s a read-only page). There’s a button for going back to the main jobs list page.
+
+<br>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003447/wire4_scv5jo.png" alt="Wireframe for job details page, mobile version." width="40%"/></center>
+<br>
+
+The main jobs list also has an icon next to each task with the option of deleting the task. If the delete button is pressed, a confirmation page loads up to check if the user really wants to delete the item.
+
+<br>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003434/wire5_ysdqtu.png" alt="Wireframe for deletion confirmation page, mobile version." width="40%"/></center>
+<br>
+The main jobs list also has an icon button next to each task that allows the user to update the details of the task, which includes the option of checking a box to indicate whether the task has been completed.
+<br>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003500/wire7_ei5moa.png" alt="Wireframe for the task update page, desktop/ tablet version." width="60%"/></center>
+<br>
+
+This could be the same page used to add a new job, as there’s a significant overlap in content. 
+It would be great to have an ‘about’ home page right at the start, which would consist of the same logo/ login bar at the top and a block of text underneath, something like the job details page. I’ll see if I have time for this. I may well be wrong, but I think that the navigation paths and basic concept of the website are/ is so simple that any user would be to use to ‘get it’ without any extra information. If I get to go beyond the MVP, though, I will definitely add a home page that introduces the site to new visitors.
