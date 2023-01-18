@@ -27,7 +27,7 @@ A full overview of the design and development of my app, including testing and c
         * [Agile Approach](#agile-approach)
         * [Wireframes](#wireframes)
         * [Database Schema](#database-schema)
-        * [UI design choices & changes](#ui-design-choices)
+        * [UI Design Changes](#ui-design-changes)
 
 2. [Features](#features)
     - [Existing Features](#existing-features)
@@ -158,4 +158,27 @@ The main jobs list also has an icon button next to each task that allows the use
 <br>
 
 This could be the same page used to add a new job, as there’s a significant overlap in content. 
-It would be great to have an ‘about’ home page right at the start, which would consist of the same logo/ login bar at the top and a block of text underneath, something like the job details page. I’ll see if I have time for this. I may well be wrong, but I think that the navigation paths and basic concept of the website are/ is so simple that any user would be to use to ‘get it’ without any extra information. If I get to go beyond the MVP, though, I will definitely add a home page that introduces the site to new visitors.
+It would be great to have an ‘about’ home page right at the start, which would consist of the same logo/ login bar at the top and a block of text underneath, something like the job details page. I’ll see if I have time for this. I think that the navigation paths and basic concept of the website are/ is so simple that any user would be to use to ‘get it’ without instruction. If I have the time to go beyond the MVP, though, I will definitely add a home page that introduces the site to new visitors as this would help create a path of smooth navigation with the user aware of where the journey begins, and what features to expect.
+
+####  Database Schema
+
+I created the simplest possible database schema for my app, and the corresponding entity relationship diagram below was drawn using Lucid Charts early on in the planning phase. Beyond the units employed from Django, the one model (in models.py) that I created from scratch was the single model required for a to-do app in this case, which was for the jobs/ tasks created. I used class-based views, as taught in the Code Institute lessons on creating the blog ‘I think therefore I blog’ (in views.py).   
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673890372/ERD_Faire_b5v04d.png" alt="Database schema in form of an Entity Relationship Diagram." width="60%"/></center>
+<br>
+
+#### UI Design Changes
+
+I stuck to my brief, and the theme of pen and paper as well as a colour scheme inspired by the French Flag. I found a plain image that I used as the background for all of the site pages, and it's a detailed close-up of handmade paper. I felt that it added texture and warmth to what could be seen as a clinical app that ticks off tasks, but fits with the minimalist and hand-made feel.
+
+The image is by 'Kiwihug' from Unsplash and can be found at https://unsplash.com/photos/y_2GC4EhOP4.
+
+<br>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674085129/kiwihug-y_2GC4EhOP4-unsplash_1_tzbhk9.jpg" alt="Background image for the site." width="60%"/></center>
+<br>
+
+Sadly, I didn't have time to create an 'about' page or section for the site. 
+
+
+
