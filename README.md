@@ -31,7 +31,6 @@ A full overview of the design and development of my app, including testing and c
 
 2. [Features](#features)
     - [Existing Features](#existing-features)
-        * [Base HTML](#base-html)
     - [Future Features](#future-features)
 
 3. [Technologies Used - Full List](#technologies-used-list)
@@ -168,6 +167,12 @@ I created the simplest possible database schema for my app, and the correspondin
 <center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673890372/ERD_Faire_b5v04d.png" alt="Database schema in form of an Entity Relationship Diagram." width="60%"/></center>
 <br>
 
+I wrote my model early on, before the rest of the project, and decided that I wanted the list of jobs to have the uncompleted jobs at the top, to emphasise that they are to be prioritised, and struck off items at the bottom of the list.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674085809/models_vxgmtu.png" alt="model from models.py file." width="60%"/></center>
+<br>
+
 #### UI Design Changes
 
 I stuck to my brief, and the theme of pen and paper as well as a colour scheme inspired by the French Flag. I found a plain image that I used as the background for all of the site pages, and it's a detailed close-up of handmade paper. I felt that it added texture and warmth to what could be seen as a clinical app that ticks off tasks, but fits with the minimalist and hand-made feel.
@@ -175,7 +180,7 @@ I stuck to my brief, and the theme of pen and paper as well as a colour scheme i
 The image is by 'Kiwihug' from Unsplash and can be found at https://unsplash.com/photos/y_2GC4EhOP4.
 
 <br>
-<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674085129/kiwihug-y_2GC4EhOP4-unsplash_1_tzbhk9.jpg" alt="Background image for the site." width="60%"/></center>
+<center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674085129/kiwihug-y_2GC4EhOP4-unsplash_1_tzbhk9.jpg" alt="Background image for the site." width="40%"/></center>
 <br>
 
 Sadly, I didn't have time to create an 'about' page or section for the site. 
