@@ -31,7 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['faire.herokuapp.com', 'localhost']
 
-X_FRAME_OPTIONS = 'ALLOW-FROM https://ui.dev/amiresponsive?'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
