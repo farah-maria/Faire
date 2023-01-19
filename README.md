@@ -301,23 +301,42 @@ Proposed future features:
 3.	Sign in options that use existing accounts with Facebook, Instagram and Google to make life easier for the user. I think, these days, people are tired of logging in to so many apps separately!
 
 
-## **Technologies Used - Full List of Tech and Tools Used**
+## **Technologies Used - Full List of Tech, Tools & Libraries Used**
 
-HTML
-CSS
-Django
-PostgreSQL
-ElephantSQL
-Crispy Forms
-Github
-Gitpod (IDE)
-Cloudinary
-Am I Responsive? (site used for mock up images on different sized screens)
-Heroku (for deployment)
-Google Chrome dev tools, including use of Lighthouse to check performance
-Bootstrap
-Python
-Balsamiq (for wireframes)
-HTML Code Checker (https://validator.w3.org)
-CSS Code Checker (https://jigsaw.w3.org/css-validator)
-The Code Institute's own Python Code Checker: PEP8CI (https://pep8ci.herokuapp.com/)
+* HTML
+* CSS
+* Django
+* Heroku (for deployment)
+* Google Chrome dev tools, including use of Lighthouse to check performance
+* Bootstrap
+* Python
+* PostgreSQL
+* ElephantSQL
+* Crispy Forms
+* Github
+* Gitpod (IDE)
+* Balsamiq (for wireframes)
+* Cloudinary for storage of static files
+* Am I Responsive? (site used for mock up images on different sized screens)
+* HTML Code Checker (https://validator.w3.org)
+* CSS Code Checker (https://jigsaw.w3.org/css-validator)
+* The Code Institute's own Python Code Checker: PEP8CI (https://pep8ci.herokuapp.com/)
+* Unsplash for images
+* Font Awesome for icons
+* Google Fonts for all fonts used
+* Vector Stock for favicon
+<br>
+
+## **Testing**
+
+<br>
+
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Logo  	| Navigation Link               | Click On |   ✔       | 
+|  LoggedIn greeting              | Text               | None |   ✔       |
+|  Log in  	| Navigation Link & Text               | Click On |   ✔       | 
+|  Log out  | Nav Link & Text                      | click on |   ✔       |
+
+
