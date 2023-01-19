@@ -573,4 +573,72 @@ I used the Code Institute's own  PEP8CI (https://pep8ci.herokuapp.com/) app for 
 
 I grappled with a few bugs! Thankfully, as far as I know, all were resolved with the help of StackOverflow, the Slack channel for the Code Institute, my mentor Martina Terlević, her student Martin, and the Code Institute Tutor Support service.
 
+I'm guessing that having a little more experience than I did at the start of my Code Institute course meant that I had far fewer bugs than for previous projects! I had four main ones...
+
+1. Heroku deployment issue due to config vars in settings. 
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674139904/bugsHeroku_pacdz3.png" alt="deployment bug screenshot from Heroku" width="40%"/></center>
+<br>
+
+I was guided by tutor support towards the liklihood that my app wasn't being deployed due to an issue with my config vars.
+It turned that I needed to get rid of PORT 8000 (I think I picked up some notion that I had to add this config var from my previous CI project). Someone else suggested I needed to add PORT 5432. This didn't work. It turned out that I didn't need a PORT config var all for this project, and when I deleted them, my app deployed perfectly well.
+
+2. Console errors appearing in dev tools (Chrome)
+
+My mentor, Martina, alerted me to these. If it hadn't been for her, I would have completely forgotten to check for console errors altogether! These were the ones I was getting:
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674050799/bugs_mxyvxu.png" alt="console errors screenshot, Chrome dev tools" width="60%"/></center>
+<br>
+
+I prioritised solving the issues in red. These were being caused by a link in my base.html file to a Javascript file that didn't exist. I had intended on adding some Javascript to my project, so added an appropriate link to remind me to do this, but I never got round to using any JS at all. By commenting out the link in the head of my base.html file, the console errors in red disappeared after redeployment.
+
+I have kept the commented out link rather than deleting it, as I'd like to add some Javascript code for a future feature (mentioned above - a print list button using "window.print()").
+
+3. Django permissions and viewing mock-ups in Am I Responsive? 
+
+I wanted to create a mock-up for the app viewed on different sized devices using the Am I Responsive? website tool. But I kept being shown blank screens when I entered the url and pressed enter. I tried a few other sites that provide a similar service, and found the same thing.
+
+I asked the question on Slack, and discovered that the issue was related to Django permissions. I fellow student was able to help me resolve this.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674064618/bugs1_tx1xig.png" alt="Slack troubleshooting" width="40%"/></center>
+<br>
+
+By following the trail on StackOverflow, I discovered that I need to change my Django settings.py and add an import at the top of my views.py to allow the site pages to be viewed by the a third party app. I just had to do this for getting the images I needed, before changing the settings back so that the security of my app isn't compromised in future.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674066417/bug3_ubvk62.png" alt="Settings.py change" width="40%"/></center>
+<br>
+
+I had to change the X_FRAME_OPTIONS to "allow from" and add the exact url for the site I was using (Am I Responsive).
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674066417/bug3_ubvk62.png" alt="Settings.py change" width="60%"/></center>
+<br>
+
+I also had to add a 'clickjacking' import "X_Frame_Options_Exempt" in views.py as follows (see highlighted text):
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674066424/bug3a_plub0q.png" alt="views.py change" width="60%"/></center>
+<br>
+
+After this, I was able to create the mock-ups I needed for inclusion in this README. As soon as I had the images, I changed the settings back to how they were before (I removed the import and changed X_FRAME_OPTIONS back to 'SAMEORIGIN').
+
+4. Database not working after I made a change in models.py
+
+I decided to change something in models.py and thought nothing of it. Afterwards, my deployed site wasn't keeping any saved data. It wasn't saving passwords or usernames, or any new accounts or superusers set up.
+
+I discovered from tutor support that this can happen after a change to the models.py file, even if the changes are migrated.
+
+What solves the issue is deleting everything in __pycache__ and then resetting the database. In my case, this meant going into my ElephantSQL account to reset it. Then I committed and pushed my changes. 
+
+A superuser (admin) had to be created again from scratch, and users needed to be created again also, but this solved the issue.
+
+In the case below, I'm showing a screenshot from the Code Institute blog 'I think therefore I blog' for security reasons, but as you can see there is a field called 'User & Default Database' with a 'reset' button next to it. It was by pressing that button that I reset my database. 
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674154867/Screenshot_419_nkk9py.png" alt="reset option in elephantSQL" width="60%"/></center>
+<br>
 
