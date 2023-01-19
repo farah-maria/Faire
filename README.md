@@ -186,4 +186,68 @@ The image is by 'Kiwihug' from Unsplash and can be found at https://unsplash.com
 Sadly, I didn't have time to create an 'about' page or section for the site. 
 
 
+## **Features**
+
+There are six pages to the Faire app, with the addition of a page (the jobs list page) that appears altered with extra information on it for users that do not have any jobs on their list. There are a number of features I would like to add in future to improve the app beyond the MVP level.
+
+### **Existing Features**
+List of pages to the site:
+1.	Log-in page, with a ‘Sign up here’ message in a different colour to redirect the user to the sign-up page. The following image is a screenshot of how the log-in page looks on my mobile phone, which is a Huawei P30 lite.
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674065347/mobileview_ahhh6f.jpg" alt="Log in page as it appears on my mobile phone – a Huawei P30 lite." width="60%"/></center>
+<br>
+
+2.	Sign-up page for new users. The fields were created by Django and I used crispy forms to improve the appearance of the form. The following image is the sign-up page as it appears on my Dell laptop. There’s a link for logging in at the bottom of the text area, in case the user is accidentally on this page and already has login details.
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674087822/signuphere_sho7dl.png" alt="Sign-up page as it appears on my Dell laptop." width="60%"/></center>
+<br>
+
+3.	Jobs list page, with CRUD functionalities indicated by icons that the user can click on to take them to other relevant pages. This is the homepage for logged in users. The image below shows the informational text that appears, with the trash/ delete icon turned red as the cursor hovers over it.
+
+A message at the top tells the user how many incomplete tasks they have outstanding.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674088599/inconred_cordjt.png" alt="Jobs list page as it appears on my Dell laptop." width="60%"/></center>
+<br>
+
+ICONS ->
+
+These are next to the list items and change colour from blue to red when the cursor hovers over them.
+Magnifying glass icon takes user to the job details page (4). This displays information as a read-me only option. If the job has been ticked as done, an extra message appears at the bottom to say ‘This job is completed. Well done!”
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674089497/feedcat_mnn9zi.png" alt="job details, read-me only" width="60%"/></center>
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674089703/completed_hhkntg.png" alt="completed task message on screen" width="60%"/></center>
+<br>
+
+A trash icon takes user to ‘are you sure you want to delete?’ page (5), where user can either confirm or go back to the list of jobs. 
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674089940/suredelete_rl2zmb.png" alt="delete confirmation message" width="60%"/></center>
+<br>
+
+Pencil icon takes user to the add/ update page (6), where the user can complete or change information and tick a ‘done’ box if the task is completed. If the task is completed, it will appear as having a line drawn through it on the jobs list page. There is a ‘go back’ (to jobs list) link, in case the user changes their mind, and a ‘confirm’  button that saves the input information and updates the jobs list on the list page.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674090138/enterupdate_s57gg9.png" alt="enter and update form page" width="60%"/></center>
+<br>
+
+An add icon in a white circle on the with blue text next to it (‘add task here’) takes the user from the jobs list page to page 6 where a new job can be entered and saved. 
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674090347/addtast_npbnfn.png" alt="add task here" width="30%"/></center>
+<br>
+
+The logo at the top of every page is a link that goes back to the jobs list page.
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674090467/navbar_ohci5l.png" alt="logo and login" width="50%"/></center>
+<br>
+ 
+**If there are no jobs on the to do list, the jobs list page will display a message informing the user of this, and have an extra link included that takes the user to the add/ update form on page 6.**
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674090642/nojobs_z17foy.png" alt="no jobs message" width="50%"/></center>
+<br>
+
+
+**The login status of the user is reflected in the data available to the user on their navigation journey. If a user is logged in, a ‘hello, **username**’ message will be on the nav bar, with a link underneath for logging out if they want to. If the user is logged out, there is no login greeting, just the option to login, which appears as a link next to the logo. Data from the jobs on the lists is only available via the account that created the data, with the exception of the admin superuser who has access to the backend of the site.** 
 
