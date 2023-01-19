@@ -265,6 +265,23 @@ It works well, I think, with the minimalist and hand-written theme of the site. 
 
 <br>
 
+** Security Features**
+
+* User Authentication
+
+I have used Django's LoginRequiredMixin to limit access based on permissions. Where the user isn’t passing user authentication due to an incorrect password and username, the following message in red will come up after attempted login:
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674094262/invalid_wbnuqa.png" alt="Login Failed Message" width="60%"/></center>
+<br>
+
+* Database Security
+
+The Database URL and the secret key are in my env.py file so that no unwarranted access to the database is possiblle.
+
+I have also used Cross-Site Request Forgery (CSRF) Tokens for my forms.
+
+
 ### **Future Features**
 
 Proposed future features:
