@@ -567,6 +567,10 @@ I used the Code Institute's own  PEP8CI (https://pep8ci.herokuapp.com/) app for 
 <center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003209/pyth_val8_onkw5f.png" alt="Python code validation" width="60%"/></center>
 <br>
 
+## **Bugs**
 
+<br>
+
+I grappled with a few bugs! Thankfully, as far as I know, all were resolved with the help of StackOverflow, the Slack channel for the Code Institute, my mentor Martina Terlević, her student Martin, and the Code Institute Tutor Support service.
 
 
