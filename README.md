@@ -343,6 +343,7 @@ the deployed version on mobile phones and desktops.
 |  LoggedIn greeting              | Text               | None |   ✔       |
 |  Log in  	| Navigation Link & Text               | Click On |   ✔       | 
 |  Log out  | Nav Link & Text                      | Click on |   ✔       |
+Hover effect on log in and logout links | Turns darker blue & underline appears  | Hover |   ✔       | 
 
 <br>
 
@@ -359,6 +360,8 @@ the deployed version on mobile phones and desktops.
 
 ### Sign up
 
+<br>
+
 | Feature            |  Expect                       | Action   | Result    |
 | ------------------ | ----------------------------- | -------- | ----------|
 |  Form - enter a username  	| Text box with advice on valid input | Input text/ nums/ symbols |   ✔       | 
@@ -366,12 +369,62 @@ the deployed version on mobile phones and desktops.
 |  Confirm button  	| Acceptance & redirect to Jobs List page or Rejection and request to reenter info | Click On |   ✔     | 
 |  Log in option  | Nav Link                      | Click on |   ✔       |
 
+<br>
 
 ### Jobs list page
 
+<br>
 
-### Add job/ Update job (it's the same form and url)
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Add task icon| Go to add job form | Click |   ✔       | 
+|  See details icon (mag glass)| Read only text saved from previous input | Click |   ✔       |
+|  Trash icon  	| Select deletion option for item on list a job, get redirected to confirmation page| Click |   ✔     | 
+|  Text at top stating number of incomplete jobs  | Text updated from previous input  | None |   ✔       |
+|  'No jobs in your list' text | Text generation from 0 jobs previously input  | None |   ✔       |
+|  Extra 'Add a new task' option if no jobs on list  | Nav Link | Click on |   ✔       |
+ Hover effect on icons and links  | Change in color for icons, underline appearance for links | Hover |   ✔       |
+
+<br>
+
+### Add job/ Update job form (it's the same page, form and url)
+
+<br>
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Form - header field| Input max 210 characters for title of job | text input &  save |   ✔       | 
+|  Form - info | Input  | Click |   ✔       |
+|  Trash icon  	| Select deletion option for item on list a job, get redirected to confirmation page| Click |   ✔     | 
+|  Text at top stating number of incomplete jobs  | Text updated from previous input  | None |   ✔       |
+|  'No jobs in your list' text | Text generation from 0 jobs previously input  | None |   ✔       |
+|  Extra 'Add a new task' option if no jobs on list  | Nav Link | Click on |   ✔       |
+ Hover effect on icons and links  | Change in color for icons, underline appearance for links | Hover |   ✔       |
+
+<br>
 
 ### Job details page
+<br>
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Form - header field| Input max 210 characters for title of job | text input &  save |   ✔       | 
+|  Form - info | Input text field for extra info on the job that needs doing  | text input & save |   ✔       |
+|  Done?  	| Check/Tick box for when job done | Click to tick |   ✔     | 
+|  Save | Button to save form input| Click on |   ✔       |
+|  'No jobs in your list' text | Text generation from 0 jobs previously input  | None |   ✔       |
+|  'Go back' option| Nav Link (directs back to jobs list)| Click on for redirect |   ✔       |
+ Hover effect on 'go back' link | Turns darker blue & underline appears  | Hover |   ✔       | 
+
+<br>
 
 ### Are you sure you want to delete? page (result of clicking on trash icon on jobs list)
+
+<br>
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Tailored Text: 'Are you sure you want to delete....?'| Name of user's job will appear at end of sentence | None |   ✔       | 
+|  'Yes, delete!' button| Confirmation button that will delete job| Click on - removes from jobs list |   ✔       |
+|  'No, go back!'| Button that redirects back to jobs list | Click on > redirect |   ✔     | 
+|  Hover effect on 'go back' link | Turns darker blue & underline appears  | Hover |   ✔       | 
