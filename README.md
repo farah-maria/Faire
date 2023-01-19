@@ -275,3 +275,25 @@ Proposed future features:
 2.	An easy ‘print this list’ button on the jobs list page. This could be done easily using JavaScript.
 
 3.	Sign in options that use existing accounts with Facebook, Instagram and Google to make life easier for the user. I think, these days, people are tired of logging in to so many apps separately!
+
+
+## **Technologies Used - Full List of Tech and Tools Used**
+
+HTML
+CSS
+Django
+PostgreSQL
+ElephantSQL
+Crispy Forms
+Github
+Gitpod (IDE)
+Cloudinary
+Am I Responsive? (site used for mock up images on different sized screens)
+Heroku (for deployment)
+Google Chrome dev tools, including use of Lighthouse to check performance
+Bootstrap
+Python
+Balsamiq (for wireframes)
+HTML Code Checker (https://validator.w3.org)
+CSS Code Checker (https://jigsaw.w3.org/css-validator)
+The Code Institute's own Python Code Checker: PEP8CI (https://pep8ci.herokuapp.com/)
