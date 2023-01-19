@@ -486,6 +486,10 @@ I used the Lighthouse report app in Chrome dev tools to check that my app has a 
 
 I also used Lighthouse to check that I have a high score for best practices, The best practice audit highlights opportunities to improve the overall code health of a web app.
 
+I checked for search engine optimisation also, and had high scores for this. 
+
+I actually ignored the other scores, as at this stage of my learning I don't actually know what they mean yet.
+
 *DESKTOP VERSION - LIGHTHOUSE REPORT*
 
 <br>
@@ -499,3 +503,70 @@ I also used Lighthouse to check that I have a high score for best practices, The
 
 
 ### **Testing Code (Validation)**
+<br>
+All of my **HTML** code passed validation via the W3C Markup Validation Service. 
+
+For Django projects, the 'validate by url' option needs to be used, or the template code for Django will appear as errors.
+
+I checked the url for one page of HTML at a time. (My app has five pages.)
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673904505/html_val_1_nqlpbk.png" alt="HTML code validation screenshot" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673904512/html_val_2_pzfvni.png" alt="HTML code validation screenshot" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673904520/html_val_3_boccfm.png" alt="HTML code validation screenshot" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673904531/html_val_4_kuomi8.png" alt="HTML code validation screenshot" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673904538/html_val_5_bwtldx.png" alt="HTML code validation screenshot" width="60%"/></center>
+<br>
+
+I used the Jigsaw W3C validation service to check my **CSS code**. I only have one CSS file, so it was quite straight-forward and my code passed with no errors.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1673904693/css_val_nsl58f.png" alt="CSS code validation screenshot" width="60%"/></center>
+<br>
+
+I used the Code Institute's own  PEP8CI (https://pep8ci.herokuapp.com/) app for checking my **Python code**. Each file ending with .py in my repo was checked. All of my code passed without errors. 
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003124/pyth_val1_vjdmba.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003139/pyth_val2_aiowtc.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003156/pyth_val4_tl8omt.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003170/pyth_val5_no4vgt.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003187/pyth_val6_aeywp9.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003198/pyth_val7_grmxki.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674003209/pyth_val8_onkw5f.png" alt="Python code validation" width="60%"/></center>
+<br>
+
+
+
+
