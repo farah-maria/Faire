@@ -330,13 +330,48 @@ Proposed future features:
 ## **Testing**
 
 <br>
+The following functionalities were manually tested by myself and a few friends using 
+the deployed version on mobile phones and desktops.
+<br>
+<br>
 
+### Header
 
 | Feature            |  Expect                       | Action   | Result    |
 | ------------------ | ----------------------------- | -------- | ----------|
 |  Logo  	| Navigation Link               | Click On |   ✔       | 
 |  LoggedIn greeting              | Text               | None |   ✔       |
 |  Log in  	| Navigation Link & Text               | Click On |   ✔       | 
-|  Log out  | Nav Link & Text                      | click on |   ✔       |
+|  Log out  | Nav Link & Text                      | Click on |   ✔       |
+
+<br>
+
+### Log in
+
+<br>
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Form - enter username  	| Text box with validation | Text input by user |   ✔       | 
+|  Form - enter password    | Text box with validation | Text input by user |   ✔       |
+|  Confirm button  	| Acceptance & redirect to Jobs List page or request to reenter info | Click On |   ✔     | 
+|  Sign up option  | Nav Link                      | Click on |   ✔       |
+
+### Sign up
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Form - enter a username  	| Text box with advice on valid input | Input text/ nums/ symbols |   ✔       | 
+|  Form - enter a password    | Text box with advice on valid input | Input text/ nums/ symbols |   ✔       |
+|  Confirm button  	| Acceptance & redirect to Jobs List page or Rejection and request to reenter info | Click On |   ✔     | 
+|  Log in option  | Nav Link                      | Click on |   ✔       |
 
 
+### Jobs list page
+
+
+### Add job/ Update job (it's the same form and url)
+
+### Job details page
+
+### Are you sure you want to delete? page (result of clicking on trash icon on jobs list)
