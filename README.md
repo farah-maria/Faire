@@ -251,3 +251,13 @@ The logo at the top of every page is a link that goes back to the jobs list page
 
 **The login status of the user is reflected in the data available to the user on their navigation journey. If a user is logged in, a ‘hello, **username**’ message will be on the nav bar, with a link underneath for logging out if they want to. If the user is logged out, there is no login greeting, just the option to login, which appears as a link next to the logo. Data from the jobs on the lists is only available via the account that created the data, with the exception of the admin superuser who has access to the backend of the site.** 
 
+
+The favicon is a royalty free image of a hand drawn clipboard, courtesy of Vector Stock, and can be found here: 
+https://vectorstock.com/royalty-free-vector/hand-drawn-doodle-clipboard-icon-in-doodle-style-vector-34557850
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674091025/favicon_vloox0.jpg" alt="favicon" width="20%"/></center>
+<br>
+
+It works well, I think, with the minimalist and hand-written theme of the site. It also sticks to the existing colour palette. 
+
