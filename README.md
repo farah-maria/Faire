@@ -265,7 +265,7 @@ It works well, I think, with the minimalist and hand-written theme of the site. 
 
 <br>
 
-** Security Features**
+** Security Features & Admin User Functionality (backend) **
 
 * User Authentication
 
@@ -280,6 +280,14 @@ I have used Django's LoginRequiredMixin to limit access based on permissions. Wh
 The Database URL and the secret key are in my env.py file so that no unwarranted access to the database is possiblle.
 
 I have also used Cross-Site Request Forgery (CSRF) Tokens for my forms.
+
+
+* Admin access
+
+Django comes with admin control functionality, and the control panel is easy to use. It can be accessed for my app via: https://faire.herokuapp.com/admin/login/?next=/admin/  
+
+There are options here to view content, change passwords, change permissions of different users, and generally look into different registered accounts as well as their authentication and authorisation settings.
+
 
 
 ### **Future Features**
