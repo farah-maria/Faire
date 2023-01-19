@@ -264,3 +264,14 @@ https://vectorstock.com/royalty-free-vector/hand-drawn-doodle-clipboard-icon-in-
 
 It works well, I think, with the minimalist and hand-written theme of the site. It also sticks to the existing colour palette. 
 
+<br>
+
+### **Future Features**
+
+Proposed future features:
+
+1.	An ‘about’ page or section that introduces the app, its functionality, and the navigational paths/ structure.
+
+2.	An easy ‘print this list’ button on the jobs list page. This could be done easily using JavaScript.
+
+3.	Sign in options that use existing accounts with Facebook, Instagram and Google to make life easier for the user. I think, these days, people are tired of logging in to so many apps separately!
