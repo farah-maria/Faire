@@ -753,3 +753,25 @@ In the case below, I'm showing a screenshot from the Code Institute blog 'I thin
 
     8. Finally, select the *Open App* button the top right of the screen to see your deployed application.
 
+## **Acknowledgements & Credits**
+
+1. Code:
+
+My project wouldn't have been possible without learning from the 'I think therefore I blog' Code Institute walkthrough project and 
+Desphixs' Youtube tutorials called "Django To Do List App With User Registration & Login" (https://www.youtube.com/watch?v=GRz3pcU89qU&t=9s&ab_channel=Desphixs)
+
+2. Images:
+
+My background image is by 'Kiwihug' from Unsplash and can be downloaded free of charge at https://unsplash.com/photos/y_2GC4EhOP4.
+
+My favicon is a royalty free image courtesy of Vector Stock, and can be found here: 
+https://vectorstock.com/royalty-free-vector/hand-drawn-doodle-clipboard-icon-in-doodle-style-vector-34557850
+
+3. Other:
+
+All fonts are from Google Fonts and all icons are from Font Awesome
+
+The mockups used at the top of this README were generated using the Am I Resposive? website
+
+See the complete list of technologies and tools above in this README. 
+
