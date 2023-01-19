@@ -38,10 +38,9 @@ A full overview of the design and development of my app, including testing and c
 4. [Testing](#testing)
     - [Testing Devices](#testing-devices)
     - [Media Queries](#media-queries)
-    - [Validation](#validation)
+    - [Testing Code](#testing-code)
         * [HTML](#html)
         * [CSS](#css)
-        * [JavaScript](#javascript)
         * [Python](#python)
     - [Bugs](#bugs)
 
@@ -329,13 +328,15 @@ Proposed future features:
 
 ## **Testing**
 
+### **Manual Testing of Features**
+
 <br>
 The following functionalities were manually tested by myself and a few friends using 
 the deployed version on mobile phones and desktops.
 <br>
 <br>
 
-### Header
+#### **Header** (on all pages)
 
 | Feature            |  Expect                       | Action   | Result    |
 | ------------------ | ----------------------------- | -------- | ----------|
@@ -347,7 +348,7 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 
 <br>
 
-### Log in
+#### **Log in**
 
 <br>
 
@@ -358,7 +359,7 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 |  Confirm button  	| Acceptance & redirect to Jobs List page or request to reenter info | Click On |   ✔     | 
 |  Sign up option  | Nav Link                      | Click on |   ✔       |
 
-### Sign up
+#### **Sign up**
 
 <br>
 
@@ -371,7 +372,7 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 
 <br>
 
-### Jobs list page
+#### **Jobs list page**
 
 <br>
 
@@ -387,7 +388,21 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 
 <br>
 
-### Add job/ Update job form (it's the same page, form and url)
+
+#### **Job details view page**
+
+<br>
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  Text, read only | All info on an individual job displayed, read only | None |   ✔       | 
+|  Go back option| Nav link > job list page| Click |   ✔       |
+ Hover effect on go back link  | Change in color and addition of underline | Hover |   ✔       |
+
+<br>
+
+
+#### **Add job/ Update job form** (it's the same page, form and url)
 
 <br>
 
@@ -403,7 +418,7 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 
 <br>
 
-### Job details page
+#### **Job details page**
 <br>
 
 | Feature            |  Expect                       | Action   | Result    |
@@ -418,7 +433,7 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 
 <br>
 
-### Are you sure you want to delete? page (result of clicking on trash icon on jobs list)
+#### **Are you sure you want to delete? page (result of clicking on trash icon on jobs list)**
 
 <br>
 
@@ -428,3 +443,37 @@ Hover effect on log in and logout links | Turns darker blue & underline appears 
 |  'Yes, delete!' button| Confirmation button that will delete job| Click on - removes from jobs list |   ✔       |
 |  'No, go back!'| Button that redirects back to jobs list | Click on > redirect |   ✔     | 
 |  Hover effect on 'go back' link | Turns darker blue & underline appears  | Hover |   ✔       | 
+
+<br>
+
+### **Media Queries** & **Testing responsivity on different devices**
+
+The app was tested on all main screen sizes from the smallest screen size of an iPhone 4 upwards. 
+The use of Bootstrap meant very few media queries needed to be added in CSS to make the app layout work on 
+different sized screens, especially as Bootstrap takes a mobile-first approach, so the app worked reasonably well on phone
+screens without changes made.
+
+The app also appears well enough on the Galaxy Fold phone.
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674065347/mobileview_ahhh6f.jpg" alt="mob phone view of app" width="40%"/></center>
+<br>
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674065323/desktopview_txspuc.png" alt="desktop view of app" width="60%"/></center>
+<br>
+
+Media queries were added for the header bar and larger headings to still be in the expected place (left side of top of screen) with sufficient space around these items to look pleasant enough and readable on smaller phone screens. This was also done to maintain consistency in style with the desktop/ tablet appearance of the app and vice versa.
+
+I used the Google Chrome dev tools to test the appearance of the app on the following devices in addition to the iPhone 4:
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674149041/responseSizes_okpsiv.png" alt="screen sizes
+" width="40%"/></center>
+<br>
+
+Some of the smaller sizes do require more spacing to the left of the screen, and I would add this if time were available. For the time being, there is basic functionality on all screen sizes with the logos and headings still looking distinctive enough compared with the rest of the body text.
+
+<br>
+
+### **Testing Code (Validation)**
