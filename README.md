@@ -46,8 +46,7 @@ A full overview of the design and development of my app, including testing and c
     - [Bugs](#bugs)
 
 5. [Deployment](#deployment)
-6. [Agile Reflections on Product Development](#agile-reflections)
-7. [Acknowledgements & Credits](#acknowledgements-and-credits)
+6. [Acknowledgements & Credits](#acknowledgements-and-credits)
     - [Images](#images)
     - [Code](#code)
 
