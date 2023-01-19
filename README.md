@@ -183,6 +183,9 @@ The image is by 'Kiwihug' from Unsplash and can be found at https://unsplash.com
 <center><img src="https://res.cloudinary.com/farahtasia/image/upload/v1674085129/kiwihug-y_2GC4EhOP4-unsplash_1_tzbhk9.jpg" alt="Background image for the site." width="40%"/></center>
 <br>
 
+After creating a search box for the user to easily search the task they want to look up using keywords, I decided it was 
+an unnecessary feature, because the list info is very basic and the app is optimised for a just a few items that can be viewed on a single page. If I extended the functionality of the app, with more details stored on each task, I would add a search box again. 
+
 Sadly, I didn't have time to create an 'about' page or section for the site. 
 
 
