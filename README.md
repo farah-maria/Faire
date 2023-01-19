@@ -38,6 +38,7 @@ A full overview of the design and development of my app, including testing and c
 4. [Testing](#testing)
     - [Testing Devices](#testing-devices)
     - [Media Queries](#media-queries)
+    - [Testing Accessability](#lighthouse)
     - [Testing Code](#testing-code)
         * [HTML](#html)
         * [CSS](#css)
@@ -475,5 +476,26 @@ I used the Google Chrome dev tools to test the appearance of the app on the foll
 Some of the smaller sizes do require more spacing to the left of the screen, and I would add this if time were available. For the time being, there is basic functionality on all screen sizes with the logos and headings still looking distinctive enough compared with the rest of the body text.
 
 <br>
+
+### **Testing Accessibility** **and Code Best Practice**
+
+I focused on using colours with a high level of contrast for people with sign issues, and a soft coloured background so that
+there is isn't a harsh glare from the screen.
+
+I used the Lighthouse report app in Chrome dev tools to check that my app has a high accessibility score.
+
+I also used Lighthouse to check that I have a high score for best practices, The best practice audit highlights opportunities to improve the overall code health of a web app.
+
+*DESKTOP VERSION - LIGHTHOUSE REPORT*
+
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674050784/Lighthouse_desk_wtknbq.png" alt="Lighthouse report on best practices and accessability for desktop version" width="60%"/></center>
+<br>
+
+*MOBILE VERSION - LIGHTHOUSE REPORT*
+<br>
+<center> <img src="https://res.cloudinary.com/farahtasia/image/upload/v1674050777/Lighthouse_isu1qy.png" alt="Lighthouse report on best practices and accessability for mobile version" width="40%"/></center>
+<br>
+
 
 ### **Testing Code (Validation)**
